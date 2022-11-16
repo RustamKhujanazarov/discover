@@ -1,0 +1,524 @@
+@font-face{
+    font-family: 'Georama';
+    src: url(./georama-font/Static/TTF/Georama-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Chicle';
+    src: url(./chicle/Chicle-Regular.ttf);
+}
+
+*{
+    margin: 0 auto;
+}
+
+html{
+    font-size: 20px;
+}
+
+body{
+    font-family: 'Georama';
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    transition: 0.5s;
+    margin: 0 auto;
+}
+
+p, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    /* max-width: 1440px; */
+    width: 100%;
+    height: max-content;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header-content{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4.5rem
+}
+
+.logo{
+    width: 6rem;
+    height: 6rem;
+}
+
+.logo__img{
+    width: 6rem;
+    height: 6rem; 
+}
+
+.header-content-right{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    gap: 2rem;
+}
+
+.navigation__link{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: #000;
+    transition: 0.3s;
+}
+
+.navigation__link:hover{
+    color: orangered;
+}
+
+.button{
+    display: flex;
+    gap: 2rem;
+}
+
+.button__link{
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    border: 1px solid #3F4FE1;
+    border-radius: 25px;
+    color: #000;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.button__link:hover{
+    background-color: rgb(55, 126, 126);
+    color: #fff;
+}
+
+.button__link__login{
+    border: none;
+    background-color: #7934EA;
+    color: #fff;
+    padding: 0.5rem 2rem;
+}
+
+/* main section */
+
+.main{
+    background: linear-gradient(62.36deg, #7926FFD8 , #51ADE000 );
+    /* max-width:1440px ; */
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.banner{
+    width: 95%;
+    margin: 0 auto;
+    background-image: url(./images/img2.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 30rem;
+    background-size: cover;
+}
+
+.gradient{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5rem;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 6.5e-05) 0%, rgba(0, 0, 0, 0.65) 150%);
+}
+
+.banner__title{
+    font-size: 3.25rem;
+    line-height: 4rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Chicle';
+    padding-top: 1.5rem;
+    max-width: 29rem;
+    margin: 0;
+    text-align: center;
+}
+
+.banner__navigation{
+    margin-top: 3.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.banner__navigation__link{
+    padding: 0.5rem 1rem;
+    transition: 0.5s;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.banner__navigation__link:hover{
+    background-color: #fff;
+    border-radius: 0.4rem;
+    color: #000;
+}
+
+.form{
+    display: flex;
+    max-width: 36rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+}
+
+.input{
+    border: none;
+    width: 31rem;
+    outline: none;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: red;
+    border-radius: 0 0.5rem 0.5rem 0;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.icon:hover{
+    background-color: #333;
+}
+
+/* .box-1 section */
+
+.box-1{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin: 2rem auto 0 auto;
+}
+
+.title{
+   font-size: 2.5rem;
+   line-height: 3rem;
+   padding-top: 2rem; 
+   text-align: center;
+   color: #333;
+}
+
+.card-box{
+    display: flex;
+    height: max-content;
+    gap: 3rem;
+    padding: 1rem 0 3rem 0;
+}
+
+.card{
+    display: flex;
+    flex-direction:column ;
+    /* height: max-content; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.card__img{
+    width: 7rem;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title{
+  font-size: 1.5rem;
+}
+
+.card-text{
+  font-size: 1rem; 
+}
+
+.card__button{
+    padding: 0.5rem 3rem;
+    background-color: rgb(55, 126, 126);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.card__button:hover{
+    background-color: aqua;
+    color: #fff;
+}
+
+/* box-2 section */
+
+.box-2{
+    margin-top: 4rem;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.box-2__text{
+    display: flex;
+    align-items: center;
+   max-width: 50%;
+   text-align: center;
+   font-size: 0.8rem;
+}
+
+.box-2__card-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 18rem;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+.long-card{
+    width: 19%;
+    height: 100%;
+    position: relative;
+   
+}
+
+.long-card__img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+
+.long-card__text{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.long-card__link{
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    font-size: 0.6rem;
+    color: rgb(105, 98, 98);
+    padding: 0 0.5rem;
+    background-color: rgb(206, 202, 202);
+    border-radius: 0.3rem;
+    z-index: 2;
+}
+
+.long-card__link:hover{
+   background-color: #333;
+   color: #fff;
+}
+
+.long-card__hover{
+    font-size: 0;
+}
+
+.long-card:hover  .long-card__hover{
+    font-size: 0.8rem;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(55, 126, 126);
+    color: #fff;
+    height: 16rem;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.long-card:hover .text-1{
+    font-size: 1rem;
+}
+
+.long-card:hover .text-2{
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem; 
+}
+
+.short-card{
+    position: relative;
+    width: 19%;
+    height: 48%;
+}
+
+.short-card__hover{
+    font-size: 0;
+}
+
+.short-card:hover  .short-card__hover{
+    font-size: 0.8rem;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(55, 126, 126);
+    color: #fff;
+    height: 7rem;
+    border-radius: 0.3rem;
+    transition: 0.3s;
+}
+
+.short-card:hover .text-1{
+    font-size: 1rem;
+}
+
+.short-card:hover .text-2{
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem; 
+}
+
+.short-card__img{
+    border-radius: 0.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* box-3 style */
+
+.box-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+    width: 95%;
+}
+
+.box-3__title{
+    color: #fff;
+}
+
+.box-3__form{
+    padding: 0;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+}
+
+/* box-4 style */
+
+.box-4{
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.box-4__img{
+    width: 50%;
+    height: 8rem;
+    position: absolute;
+    top: -4.5rem;
+}
+
+.box-4__backgraund-img{
+    width: 100%;
+    height: 30rem;
+}
+
+.footer{
+    width: 100%;
+    height: 5rem;
+}
+
+.footer__container{
+    width: 100%;
+    height: auto;
+}
+
+.footer__img{
+    width: 100%;
+    height: 5rem;
+}
+
+@media only screen and (max-width: 1024px){
+    html{
+     font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    html{
+     font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    html{
+     font-size: 7px;
+    }
+
+    .navigation__link{
+        font-size: 2rem;
+    }
+
+    .button__link{
+        font-size: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .card-title{
+        font-size: 2rem;
+    }
+    .card-text{
+        font-size: 1.6rem;
+        text-align: start;
+    }
+
+    .card__button{
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .box-2__text{
+        max-width: 70%;
+        font-size: 1.7rem ;
+    }
+
+    .long-card__text{
+        font-size: 1.7rem;
+    }
+
+    .long-card__link{
+        font-size: 1.2rem;
+    }
+
+    .box-3__title{
+        color: #fff;
+        font-size: 3rem;
+    }
+}
+
